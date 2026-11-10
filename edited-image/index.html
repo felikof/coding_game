@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="img">
+        <input type="text" id="prefix" disabled value="+">
+        <img src="/main-bloc-cover1.png" alt="image">
+    </div>
+
+    <script>
+        function getParameterByName(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        console.log();
+        
+        const country = getParameterByName('country');
+
+        const prefixElement = document.getElementById('prefix');
+        
+        if (country === 'tg') {
+            prefixElement.value = '+228';
+        } else if (country === 'bn') {
+            prefixElement.value = '+229';
+        } else {
+            prefixElement.value = '+228';
+        }
+    </script>
+</body>
+</html>

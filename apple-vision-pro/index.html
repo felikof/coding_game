@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Vision Pro - Expérience 3D</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fond animé -->
+    <div id="particles-js"></div>
+    
+    <!-- Contenu principal -->
+    <div class="container">
+        <!-- En-tête -->
+        <header class="header">
+            <h1>Apple Vision Pro</h1>
+            <p>Révolutionnez votre perception du numérique</p>
+        </header>
+
+        <!-- Modèle 3D -->
+        <div class="model-container">
+            <div class="model-wrapper">
+                <iframe id="dmodel" title="Vision Pro" 
+                    src="https://sketchfab.com/models/3341d1f3f75e41b59fcedd1f46f03d56/embed?autostart=1&camera=0&ui_hint=0&dnt=1&api=1">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Sections de contenu -->
+        <main class="content">
+            <section class="section">
+                <h2>Écrans Avancés</h2>
+                <p>23 millions de pixels par œil</p>
+            </section>
+            <section class="section">
+                <h2>Contrôle Intuitif</h2>
+                <p>Interaction naturelle par les mouvements</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

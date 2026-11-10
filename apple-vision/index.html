@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Pro - Parallax CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top">
+        <video autoplay muted loop playsinline>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="header">
+            <h1>Apple Vision Pro</h1>
+            <p>Révolution de la réalité mixte</p>
+        </div>
+    </div>
+
+    <!-- Conteneur pour le modèle 3D -->
+    <div class="parallax-container">
+        <!-- <iframe class="model-3d" title="Vision Pro" allowfullscreen
+            src="https://sketchfab.com/models/3341d1f3f75e41b59fcedd1f46f03d56/embed?autostart=1&camera=0&ui_hint=0&dnt=1">
+        </iframe> -->
+
+        <iframe title="Apple Vision Pro" frameborder="0" allowfullscreen mozallowfullscreen="true"
+            webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" width="1440" height="1080" pointer-events="none"
+            src="https://sketchfab.com/models/3341d1f3f75e41b59fcedd1f46f03d56/embed?autostart=1&transparent=1&dnt=1">
+        </iframe>
+    </div>
+
+    <div class="content">
+        <video autoplay muted loop playsinline>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <h2>Écrans Micro-OLED</h2>
+        <p>23 millions de pixels par œil</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

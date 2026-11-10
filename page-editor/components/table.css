@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #1976d2;
+    --hover-color: #e3f2fd;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    right: 160px;
+    max-width: 1700px;
+    margin: 0 auto;
+    /* background: white; */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.table-container {
+    position: relative;
+    overflow: visible; /* Changé de auto à visible pour voir les boutons */
+    padding: 12px; /* Ajout de padding pour éviter que les boutons ne soient coupés */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: white;
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: 500;
+    color: #424242;
+}
+
+tr:hover {
+    background-color: var(--hover-color);
+}
+
+.add-column-btn, .add-row-btn {
+    position: absolute;
+    display: none;
+    background: white;
+    color: #1F87FF;
+    border: none;
+    /*border-radius: 50%;*/
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s;
+    -webkit-box-shadow: 5px 5px 0px 0px #CAE6FF, 10px 10px 0px 0px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 0px 0px #CAE6FF,  10px 10px 0px 0px rgba(0,0,0,0);
+    z-index: 2; /* Ajout de z-index pour s'assurer que les boutons sont au-dessus */
+}
+
+.add-column-btn {
+    top: -12px;
+    right: 0; /* Ajusté pour être au point de jonction */
+    transform: translateX(50%); /* Centré sur la bordure */
+}
+
+.add-row-btn {
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.add-column-btn:hover, .add-row-btn:hover {
+    background-color: #1565c0;
+    color: white;
+}
+
+th:hover .add-column-btn,
+tr:hover .add-row-btn {
+    display: flex;
+}
+
+.material-icons {
+    font-size: 18px;
+}

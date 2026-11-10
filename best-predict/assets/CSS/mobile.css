@@ -1,0 +1,199 @@
+/* Déclarer la police avec @font-face */
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('/fonts/Museo_Sans0.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: 'Museo Sans', sans-serif;
+    box-sizing: border-box;
+    width: auto;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+header {
+    position: fixed;
+    display: flex;
+    padding: 20px 10px 20px 10px;
+    top: 0px;
+    width: auto;
+    margin: 0px 0px 20px 0px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+header nav {
+    width: auto;
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+    background-color: rgb(255, 200, 18);
+    border-radius: 30px;
+}
+.btn {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+header .logo {
+    position: relative;
+    background-color: transparent;
+    right: 20px;
+    float: left;
+    margin-left: 20px;
+}
+header .logo img {
+    margin: 5px 50px 0px 5px;
+    width: auto;
+}
+.main .image {
+    position: relative;
+    border-radius: 20px;
+    top: 100px;
+    width: auto;
+    z-index: -1;
+}
+.main .text {
+    position: relative;
+    top: 100px;
+    margin: 20px;
+    z-index: -1;
+}
+.main .text h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #292f36;
+}
+.main .text  p {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 2rem;
+    color: #292f36;
+}
+.text .btns .btn-1 {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(255, 200, 18);
+}
+.text .btns .btn-2 {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 40px;
+    border: 2px solid rgb(255, 200, 18);
+    color: rgb(255, 200, 18);
+    text-align: center;
+    background-color: #fff;
+}
+header nav .btn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.main .btns a:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+@media only  screen and (min-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        /* width: auto; */
+        outline: none;
+    }
+    header {
+        padding: 20px;
+        padding-bottom: 30px;
+        margin: 0px 0px 20px 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        box-shadow: 1px 1px rgb(255, 200, 18);
+    }
+    header .logo {
+        width: 300px;
+    }
+    header .logo img {
+        margin-left: 20px;
+        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    header nav {
+        margin-right: 30px;
+        margin-left: 70%;
+    }
+    
+    .main .text {
+        position: relative;
+        margin-top: -450px;
+        top: 0;
+        margin-left: 80px;
+    }
+    .main h1 {
+        font-size: 50px;
+        font-weight: 900;
+        padding-top: 10%;
+        margin-bottom: 30px;
+        color: #292f36;
+    }
+    .main p {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 2rem;
+    }
+    .text .btns .btn-1 {
+        display: inline-flex;
+        font-size: 16px;
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 10px;
+    }
+    .text .btns .btn-2 {
+        display: inline-flex;
+        padding: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main .btns {
+        padding: 10px;
+    }
+    .main .btns a {
+        margin-right: 20px;
+    }
+    .btn-1:hover, .btn-2:hover, header nav .btn:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    .main .image {
+        position: relative;
+        display: flex;
+        top: 90px;
+        /* width: 100%; */
+        justify-content: right;
+        margin-left: 800px;
+        margin-top: 100px;
+        max-width: 420px;
+        /* border: 1px solid rgb(255, 200, 18); */
+        background-color: transparent;
+    }
+}
